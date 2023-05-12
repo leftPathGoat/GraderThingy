@@ -1,0 +1,4 @@
+grading-area/ListExamples.java:15: error: ';' expected
+        result.add(0, s)
+                        ^
+1 error

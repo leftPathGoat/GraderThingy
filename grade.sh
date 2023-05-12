@@ -22,10 +22,10 @@ then
     exit 1
 fi
 
-javac -cp $CPATH grading-area/*.java
+javac -cp $CPATH grading-area/*.java 2> grading-area/error.txt
 if [[ $? -ne 0 ]]
 then
-    echo "Failed to compile"
+    echo "Failed to compile, check grading-area/error.txt for details"
     exit 1
 fi
 
